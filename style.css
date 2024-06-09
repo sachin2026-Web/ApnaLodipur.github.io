@@ -15,12 +15,13 @@ body{
 }
 nav{
     display: flex;
-    padding: 20px 100px;
-    align-items: center;
+    padding: 10px 10px;
+    align-items:center;
 
 }
 nav img{
-    width: 100px;
+    width: 75px;
+    border-radius: 50%;
 }
 ul{
     margin: 0px;

@@ -2,16 +2,16 @@
     margin: 0;
     padding: 0;
 }
-.header{
-    height: 100vh;
+body{
+    height: 200vh;
     width: 100%;
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(d1.jpeg);
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(d3.jpg);
     background-position: center;
     background-size: cover;
     color: #fff;
     overflow-x: hidden;
     position: relative;
-    overflow-y: visible;
+    overflow-y: hidden;
 }
 nav{
     display: flex;
@@ -20,18 +20,36 @@ nav{
 
 }
 nav img{
-    width: 150px;
+    width: 100px;
 }
-nav ul{
-    text-align: right;
-    display: inline;
+ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
-    flex: 1;
+    height: 36px;
+    line-height: 36px;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
 }
-nav ul li{
-    display: inline-block;
-    margin: 0 20px;
+li{
+    float: left;
+    border-right: 1px solid #156ee2;
+
 }
+a{
+    display: block;
+    padding: 0 28px;
+    color: #fff;
+    text-decoration: none;
+
+}
+a:hover,.active a{
+    background-color: #156ee2;
+    transition: 0.5s;
+}
+
 .main-text{
     margin: 15% auto;
     text-align: center;
@@ -54,27 +72,4 @@ nav ul li{
     color: #000;
     transition: 0.5s;
 }
-.bottom-img{
-    height: 250px;
-    width: 243%;
-    position: absolute;
-    bottom: 0;
-    opacity: 0.3;
-    animation: animate 8s linear infinite;
 
-}
-@keyframes animate{
-    0%{
-        left: 0;
-    }
-    100%{
-        left: -2000px;
-    }
-}
-.fun{
-    color: #fff;
-}
-.fun:hover{
-    background: #fff;
-    color: #000;
-    transition: 0.5s;
